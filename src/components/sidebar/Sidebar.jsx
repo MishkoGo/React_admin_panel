@@ -1,12 +1,9 @@
 import "./sidebar.scss"
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import EqualizerOutlinedIcon from '@mui/icons-material/EqualizerOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
-import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
@@ -21,58 +18,43 @@ const Sidebar = () => {
       <hr />
       <div className="center">
         <ul>
-            <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon"/>
-            <span>Dashboard</span>
-          </li>
-          <p className="title">LISTS</p>
           <li>
             <PersonOutlineOutlinedIcon className="icon"/>
-            <span>Users</span>
+            <span>Главная</span>
           </li>
           <li>
             <CategoryOutlinedIcon className="icon"/>
-            <span>Products</span>
+            <span>Калькулятор</span>
           </li>
           <li>
             <CreditCardOutlinedIcon className="icon"/>
-            <span>Orders</span>
+            <span>Поиск</span>
           </li>
           <li>
             <LocalShippingOutlinedIcon className="icon"/>
-            <span>Delivery</span>
+            <span>Выбрать Базу</span>
           </li>
-          <p className="title">USEFUL</p>
+          <hr/>
           <li>
             <EqualizerOutlinedIcon className="icon"/>
-            <span>Stats</span>
+            <span>Инструкции</span>
           </li>
           <li>
             <NotificationsNoneOutlinedIcon className="icon"/>
-            <span>Notifications</span>
+            <span>Написать отзыв</span>
           </li>
-          <p className="title">SERVICE</p>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon"/>
-            <span>System health</span>
-          </li>
-          <li>
-            <PsychologyOutlinedIcon className="icon"/>
-            <span>Logs</span>
-          </li>
+          <hr/>
           <li>
             <SettingsOutlinedIcon className="icon"/>
-            <span>Settings</span>
+            <span>Настройки</span>
           </li>
-          <p className="USER"></p>
           <li>
             <AccountCircleOutlinedIcon className="icon"/>
-            <span>Profile</span>
+            <span>Профиль</span>
           </li>
           <li>
             <LogoutOutlinedIcon className="icon"/>
-            <span>Logout</span>
+            <span>Выйти</span>
           </li>
         </ul>
       </div>

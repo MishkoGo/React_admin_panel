@@ -3,6 +3,7 @@ import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import List from "./pages/list/List";
+import Object from "./pages/object/Object";
 
 import {
   BrowserRouter,
@@ -16,11 +17,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home/>}/>
+            <Route index element={<List/>}/>
             <Route path="login" element={<Login />}/>
             <Route path="users">
                 <Route index element={<List/>}/>
-                <Route path=":userId" element={<Single/>}/>
+                <Route path=":userId" element={<Object/>}/>
                 <Route path="new" element={<New/>}/>
             </Route>
             <Route path="products">
